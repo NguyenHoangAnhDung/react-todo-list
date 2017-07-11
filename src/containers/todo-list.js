@@ -6,7 +6,7 @@ class TodoList extends Component {
     return this.props.todos.map(todo => {
       return (
         <li key={todo.id} className="list-group-item">
-          {todo.text}
+          {`Id: ${todo.id + 1}, Text: ${todo.text}`}
         </li>
       )
     })
@@ -23,7 +23,7 @@ class TodoList extends Component {
 
 function mapStateToProps(state) {
   return {
-    todos: state.reducer_todos
+    todos: state.todos
   }
 }
 

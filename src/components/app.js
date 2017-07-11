@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import AddTodoList from '../containers/add-todo-list'
+import AddTodo from '../containers/add-todo'
 import TodoList from '../containers/todo-list'
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <AddTodoList />
+        <AddTodo />
         <TodoList />
       </div>
     )

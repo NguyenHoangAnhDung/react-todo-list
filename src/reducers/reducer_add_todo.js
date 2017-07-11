@@ -1,4 +1,4 @@
-export default (state = [], action) => {
+const addTodo = (state = [], action) => {
   switch(action.type) {
   case 'ADD_TODO':
     return [
@@ -6,10 +6,11 @@ export default (state = [], action) => {
       {
         id: action.id,
         text: action.text,
-        completed: false
       }
     ]
+  default:
+    return state
   }
-
-  return state;
 }
+
+export default addTodo
