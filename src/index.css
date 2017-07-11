@@ -1,0 +1,15 @@
+.through-out-decoration {
+  text-decoration: line-through;
+}
+
+ul.group-same-line {
+  margin: 20px -20px;
+  white-space: nowrap;
+}
+
+ul.group-same-line > li {
+  display: inline;
+  margin-right: 5px;
+  padding: 5px;
+  border-right: 1px solid lightblue;
+}

@@ -7,3 +7,17 @@ export const addTodo = text => {
     text: text
   }
 }
+
+export const toggleTodo = todo => {
+  return {
+    type: 'TOGGLE_TODO',
+    id: todo.id
+  }
+}
+
+export const filterTodo = filterText => {
+  return {
+    type: 'FILTER_TODO_LIST',
+    filterText
+  }
+}

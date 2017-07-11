@@ -3,11 +3,6 @@ import { connect } from 'react-redux'
 import { addTodo } from '../actions/index'
 
 class AddTodo extends Component {
-  constructor(props) {
-    super(props)
-    this.handleSubmit = this.handleSubmit.bind(this)
-  }
-
   handleSubmit(e) {
     e.preventDefault()
     const todoText = this.todoText.value
@@ -21,7 +16,7 @@ class AddTodo extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={e => this.handleSubmit(e)}>
           <input type="text" ref={input => { this.todoText = input }} />
           <button>Add new</button>
         </form>
